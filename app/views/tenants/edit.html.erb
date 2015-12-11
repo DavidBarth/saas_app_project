@@ -37,12 +37,12 @@
           </div>
           <div class="col-md-4">
             <%= p.select :card_expires_month, options_for_select(Payment.month_options),
-                  { include_blank: 'Month' }, data: { stripe: "exp_month" },
+                  { include_blank: 'Month' }, data: { stripe: "exp-month" },
                   class: "form-control", required: true %>
           </div>
           <div class="col-md-3">
             <%= p.select :card_expires_year, options_for_select(Payment.year_options.push),
-                  { include_blank: 'Year' }, data: { stripe: "exp_year" },
+                  { include_blank: 'Year' }, data: { stripe: "exp-year" },
                   class: "form-control", required: true %>
           </div>
         </div> 
