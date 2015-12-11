@@ -27,15 +27,15 @@
           <%= p.label :card_number, "Card Number", data: { stripe: 'label' } %>
           <%= p.text_field :card_number, class: "form-control", required: true, data: { stripe: 'number' } %>
         </div> 
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-2">
           <%= p.label :card_cvv, "Card CVV", data: { stripe: 'label' } %>
           <%= p.text_field :card_cvv, class: "form-control", required: true, data: { stripe: 'cvv' } %>
         </div> 
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-7">
           <div class="col-md-12">
             <%= p.label :card_expires, "Card Expires", data: { stripe: 'label' } %>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <%= p.select :card_expires_month, options_for_select(Payment.month_options),
                   { include_blank: 'Month' }, data: { stripe: "exp_month" },
                   class: "form-control", required: true %>
