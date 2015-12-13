@@ -15,7 +15,7 @@
     </div>
   <% end %>
 
-  <div class="control-group">
+  <div class="control-group pad-top">
     <%= f.label :title, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :title, :class => 'form-control' %>
@@ -27,10 +27,14 @@
       <%= f.text_field :details, :class => 'form-control' %>
     </div>
   </div>
-  <div class="control-group">
-    <%= f.label :expected_completion_date, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :expected_completion_date, :class => 'form-control datepicker' %>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="control-group col-md-3 no-side-padding">
+        <%= f.label :expected_completion_date, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :expected_completion_date, :class => 'form-control datepicker' %>
+        </div>
+      </div>
     </div>
   </div>
 
